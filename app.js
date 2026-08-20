@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const KEY='startportal.cloudflare.v2';
+const KEY='startportal.cloudflare.v1';
 const defaults={categories:[{id:'c1',name:'Biometria',color:'#45a86d'},{id:'c2',name:'Infrastruktur',color:'#3b82f6'}],links:[{id:'l1',categoryId:'c1',title:'Grogu',url:'https://grogu.biometria.se'},{id:'l2',categoryId:'c2',title:'Azure Portal',url:'https://portal.azure.com'}],feeds:[{id:'f1',name:'SVT Nyheter',url:'https://www.svt.se/nyheter/rss.xml'},{id:'f2',name:'Aftonbladet',url:'https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/'},{id:'f3',name:'Expressen',url:'https://feeds.expressen.se/nyheter/'},{id:'f4',name:'Sundsvalls Tidning',url:'https://news.google.com/rss/search?q=site%3Ast.nu&hl=sv&gl=SE&ceid=SE%3Asv'}],notes:'',place:'Härnösand'};
 const markets=[{name:'OMXS30',label:'OMX Stockholm 30',url:'https://indexes.nasdaqomx.com/Index/Overview/OMXS30'},{name:'OMXS30 Future',label:'OMX Stockholm 30 Future',url:'https://www.nasdaq.com/solutions/nordic-equity-derivatives'},{name:'OMXSPI',label:'OMX Stockholm PI',url:'https://www.nasdaq.com/sv/european-market-activity/indexes/omxspi'}];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];let state=load(),activeFeed=null,calMonth=new Date(),selected=new Date(),drag=null;
